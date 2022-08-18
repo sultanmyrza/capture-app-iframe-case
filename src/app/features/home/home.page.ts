@@ -12,4 +12,10 @@ export class HomePage {
   selectedTabIndex = this.initialTabIndex;
 
   constructor() {}
+
+  captureWithCustomCamera() {
+    this.selectedTabIndex = this.afterCaptureTabIndex;
+  }
+
+  navigateToInboxTab() {}
 }
