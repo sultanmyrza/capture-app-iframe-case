@@ -1,0 +1,31 @@
+<ion-content>
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav mode="over" autoFocus="false">
+      <mat-toolbar>
+        <button (click)="sidenav.toggle()" mat-icon-button>
+          <mat-icon>arrow_back</mat-icon>
+        </button>
+      </mat-toolbar>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar *ngIf="selectedTabIndex === 2">
+        <button (click)="sidenav.toggle()" mat-icon-button>
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span class="toolbar-spacer"></span>
+        <button routerLink="activities" mat-icon-button>
+          <mat-icon>history</mat-icon>
+        </button>
+        <button routerLink="inbox" mat-icon-button>
+          <mat-icon
+            matBadge="&#8288;"
+            matBadgeSize="small"
+            matBadgeColor="warn"
+          >
+            email
+          </mat-icon>
+        </button>
+      </mat-toolbar>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</ion-content>

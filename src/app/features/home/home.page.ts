@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  private readonly initialTabIndex = 2;
+  private readonly afterCaptureTabIndex = 2;
+  // eslint-disable-next-line @typescript-eslint/member-ordering
+  selectedTabIndex = this.initialTabIndex;
 
   constructor() {}
-
 }
