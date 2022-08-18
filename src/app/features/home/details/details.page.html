@@ -1,0 +1,14 @@
+<mat-toolbar>
+  <button
+    routerLink=".."
+    routerDirection="back"
+    mat-mini-fab
+    class="capture-rebranded-button"
+  >
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+</mat-toolbar>
+
+<div class="slide">
+  <iframe [src]="iframeUrlWithToken$ | async"></iframe>
+</div>
