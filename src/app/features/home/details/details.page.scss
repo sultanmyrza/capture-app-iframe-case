@@ -10,7 +10,7 @@ mat-toolbar {
 .capture-rebranded-button {
   margin: 0 4px;
   background: #ffffff40 !important; /* stylelint-disable-line declaration-no-important */
-  color: black !important; /* stylelint-disable-line declaration-no-important */
+  color: white !important; /* stylelint-disable-line declaration-no-important */
   backdrop-filter: blur(4px);
   box-shadow: none;
 }
@@ -28,6 +28,7 @@ mat-toolbar {
 .slide {
   height: 100%;
   overflow: auto;
+  background-color: black;
 
   iframe {
     /*  stylelint-disable-next-line declaration-colon-newline-after  */
